@@ -34,7 +34,7 @@
               >
             </li>
             <li class="nav-item item">
-              <a class="link nav-link" href="">Контакты</a>
+              <a class="link nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -326,7 +326,7 @@
             >Web<span class="logo-footer">Studio</span></a
           >
           <address class="footer-addres">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="list footer-list">
+          <ul class="list footer-list" id="contacts">
             <li class="footer-item">
               <a class="link footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -387,6 +387,19 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-forms">
+          <h2 class="forms-title">Подпишитесь на рассылку</h2>
+          <form action="">
+            <label for="mail"></label>
+            <input class="forms-mail" type="email" name="email" id="email" placeholder="E-mail" />
+            <button class="forms-btn" type="submit">
+              Подписаться
+              <svg class="icon-forms" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
