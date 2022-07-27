@@ -362,7 +362,8 @@ teams-section
 
 .teams-wrapper {
   padding: 30px 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -600,12 +601,12 @@ footer-forms
 
 }
 
-.forms-btn:hover,
+/* .forms-btn:hover,
 .forms-btn:focus {
   background-color: var(--logo-footer);
 
   color: #2196F3
-}
+} */
 
 
 /* ======================
@@ -674,6 +675,233 @@ modal-windows
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 
+}
+
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--logo-text);
+}
+
+.modal-title {
+  display: block;
+  margin-bottom: 12px;
+
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.subtitle-group {
+  font-size: 12px;
+  line-height: calc(14 /12);
+  letter-spacing: 0.01em;
+
+  color: var(--slave-text);
+}
+
+.username-group {
+  position: relative;
+
+}
+
+.username-group:focus-within .username-icon,
+.username-group:hover .username-icon {
+  fill: var(--logo-text);
+}
+
+.username-input:hover {
+  border-color: var(--logo-text);
+}
+
+.username-input {
+  margin-bottom: 10px;
+  width: 448px;
+  height: 40px;
+  padding: 0;
+  padding-left: 42px;
+
+  display: block;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.username-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-group {
+  position: relative;
+}
+
+.tel-group:focus-within .tel-group-icon,
+.tel-group:hover .tel-group-icon {
+  fill: var(--logo-text);
+}
+
+.tel-input:hover {
+  border-color: var(--logo-text);
+}
+
+.tel-input {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 42px;
+
+  display: block;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-group-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-group {
+  position: relative;
+}
+
+.email-group:focus-within .email-group-icon,
+.email-group:hover .email-group-icon {
+  fill: var(--logo-text);
+}
+
+.email-input:hover {
+  border-color: var(--logo-text);
+}
+
+.email-input {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 42px;
+
+  display: block;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.email-group-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-group {
+  position: relative;
+}
+
+.textarea-group {
+  margin-bottom: 20px;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  display: block;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-input {
+  display: block;
+  appearance: none;
+
+}
+
+.checkbox-custom {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid #212121;
+  border-radius: 2px;
+}
+
+
+.checkbox-input:checked+.checkbox-custom {
+  background-color: var(--logo-text);
+  border-color: var(--logo-text);
+  background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+
+}
+
+.checkbox-title {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  display: block;
+  color: var(--slave-text);
+}
+
+.checkbox-link {
+  color: var(--logo-text);
+}
+
+.btn-group-submit {
+  padding: 10px 55px;
+  margin: auto;
+  display: block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: var(--logo-footer);
+  background-color: var(--logo-text);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: inherit;
+  cursor: pointer;
 }
 
 /* .no-scroll {
